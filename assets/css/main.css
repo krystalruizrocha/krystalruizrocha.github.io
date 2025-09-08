@@ -1824,6 +1824,25 @@ input, select, textarea {
 
 		}
 
+	.gallery-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust the minmax size as needed */
+		gap: 15px; /* Space between images */
+		margin: 0 auto; /* Center the grid */
+		max-width: 1000px; /* Maximum width of the gallery */
+	}
+
+	.gallery-grid img {
+		width: 100%; /* Make images fill their grid cells */
+		height: auto; /* Maintain aspect ratio */
+		border-radius: 8px; /* Optional: rounded corners */
+		transition: transform 0.2s; /* Smooth hover effect */
+	}
+
+	.gallery-grid img:hover {
+		transform: scale(1.05); /* Slightly increase the image size on hover */
+	}
+
 /* Header */
 
 	#header {
