@@ -2334,9 +2334,13 @@ input, select, textarea {
 
 		.section-title {
 			position: absolute;
-			top: 50%;       /* vertical center */
-			left: 50%;      /* horizontal center */
+			top: 50%;         /* vertical center */
+			left: 50%;        /* horizontal center */
 			transform: translate(-50%, -50%);
 			text-align: center;
-			color: white;   /* adjust for visibility */
+			color: white;     /* make sure it’s visible on the image */
+			font-size: 3em;   /* adjust size */
+			font-weight: bold;
+			z-index: 2;       /* ensure it shows above other elements */
 		}
+
