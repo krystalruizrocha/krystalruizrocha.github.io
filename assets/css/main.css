@@ -2331,3 +2331,12 @@ input, select, textarea {
 			}
 
 		}
+
+		.section-title {
+			position: absolute;
+			top: 50%;       /* vertical center */
+			left: 50%;      /* horizontal center */
+			transform: translate(-50%, -50%);
+			text-align: center;
+			color: white;   /* adjust for visibility */
+		}
